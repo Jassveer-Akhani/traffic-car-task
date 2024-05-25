@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Driving</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <img
+        src="images/car5.png"
+        width="250px"
+        height="100px"
+        alt="this is a car"
+        class="car"
+        style="position: absolute; left: 0;"
+      />
+      <div class="traficSignal1"></div>
+      <div class="traficSignal2">
+        <div class="lights">
+          <div class="redLight signalTwoRed" onclick="stopCar()"></div>
+          <div class="yellowLight"></div>
+          <div class="greenLight signalTwoGreen" onclick="moveCar(event)"></div>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="startBtn btn" onclick="moveCar()">Accelerate</button>
+        <button class="stopBtn btn" onclick="stopCar()">Break</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
